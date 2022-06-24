@@ -1,0 +1,40 @@
+.main {
+    text-align: center;
+    border-bottom: solid 3px black;
+    padding-bottom: 10px;
+    margin: 0px;
+  }
+
+  .list {
+    border-right: solid 3px black;
+    width: 100px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-top: 25px;
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+  }
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .item {
+    padding-left: 10px;
+  }
+
+  @media(max-width:800px) {
+    #grid {
+      display: block;
+    }
+    .main {
+      border-bottom: none;
+    }
+    .list {
+      border-right: none;
+    }
+  }
